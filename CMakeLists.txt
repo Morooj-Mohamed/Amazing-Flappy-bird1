@@ -7,7 +7,9 @@ set(SFML_DIR "/usr/local/opt/sfml")
 
 find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
 
-add_executable(flappyBird main.cpp)
+add_executable(flappyBird main.cpp
+        Amazing-Flappy-bird1/main.cpp
+        Amazing-Flappy-bird2/ConsoleApplication1/ConsoleApplication1.cpp)
 
 target_link_libraries(flappyBird
         sfml-graphics
